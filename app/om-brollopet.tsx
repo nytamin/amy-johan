@@ -27,7 +27,7 @@ export default function OmBrollopet(props: {
           blir det middag och andra upptåg in på småtimmarna.
         </p>
         <p>
-          <b>Klädsel:</b> Fri klädsel! Kom det du känner dig fin i! Gärna
+          <b>Klädsel:</b> Fri klädsel! Kom i det du känner dig fin i! Gärna
           folkdräkt om du har! (Senare på kvällen kan det mycket väl bli lekar
           som kräver rörelse, så ett ombyte kan vara bra att ta med.)
         </p>
@@ -48,7 +48,14 @@ export default function OmBrollopet(props: {
           </a>
         </p>
         <p>
-          <b>Anmälan</b> Anmäl er <b>senast den 16e Juni</b>!
+          <b>Anmälan</b> Anmäl er <b>senast den 16e Juni</b>! Se{" "}
+          <a
+            href="https://ext.nytatime.se/register/?race=NLcG2jxFwGxtKtXGa&l=se"
+            onClick={(e) => props.gotoPage(e, "anmalan")}
+          >
+            Anmälan
+          </a>
+          .
         </p>
         <p>PM med fler detaljer publiceras senare!</p>
       </div>
