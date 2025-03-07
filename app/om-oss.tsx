@@ -3,13 +3,28 @@ export default function OmOss() {
     <>
       <div className="m-4 text-left text-section mx-auto max-w-[40em]">
         <h2 className="text-xl my-1">Om Oss</h2>
+
+        <div>
+          <ul>
+            <li>
+              <b>Johan</b> är brudgummen.
+            </li>
+            <li>
+              <b>Amy</b> är bruden.
+            </li>
+          </ul>
+        </div>
         <p>
-          <b>Johan</b> är brudgummen.
+          <i>
+            Vill du fylla på något mer här?
+            <br />
+            Den här sidan är open source, så du kan{" "}
+            <a href="https://github.com/nytamin/amy-johan/blob/main/app/om-oss.tsx">
+              öppna en Pull Request på GitHub!
+            </a>
+          </i>
         </p>
-        <p>
-          <b>Amy</b> är bruden.
-        </p>
-        <p>Mer info kommer senare!</p>
+        <p></p>
         <div className="flex flex-row justify-center w-full my-2">
           <div className="bg-[url(/images/img1.jpg)] bg-cover w-40 h-40"></div>
           <div className="bg-[url(/images/img2.jpg)] bg-cover w-40 h-40"></div>
