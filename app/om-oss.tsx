@@ -14,6 +14,10 @@ export default function OmOss() {
             </li>
           </ul>
         </div>
+          <p>
+            Toastmasters är Joakim Nyman och Elias Rankka, om ni önskar hålla tal eller annat spex får ni gärna kontakta:
+            <i> Joakim.nyman93@gmail.com</i> eller <i> ellias.rankka@gmail.com </i>
+          </p>
         <p>
           <i>
             Vill du fylla på något mer här?
