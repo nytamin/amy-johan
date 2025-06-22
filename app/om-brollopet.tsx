@@ -28,14 +28,27 @@ export default function OmBrollopet(props: {
         </p>
         <p>
           <b>Klädsel:</b> Fri klädsel! Kom i det du känner dig fin i! Gärna
-          folkdräkt om du har! (Senare på kvällen kan det mycket väl bli lekar
-          som kräver rörelse, så ett ombyte kan vara bra att ta med.)
+          folkdräkt om du har!
+          <br />
+          Senare på kvällen kan det mycket väl bli lekar som kräver rörelse
+          (natt-orientering?), så ett ombyte kan vara bra att ta med.
         </p>
         <p>
           <b>Barn:</b> Vide och Alve vill gärna ha sällskap av andra barn på
           bröllopet! Det kommer att bli lekar och finnas saker att göra för de
           små under dagen och tidig kväll. Ring oss gärna så kan vi klura ut den
           bästa lösningen för senare på kvällen!
+        </p>
+        <b>Presenter?</b> Vi har redan allt vi behöver, och mer därtill. Att få
+        dela dagen med er är present nog för oss!
+        <p>
+          <i>
+            (Ja, vi vet att Brudens mor tycker att vi behöver ett nytt köksbord,
+            men det ska Brudgummen snickra själv. Och Brudgummens mor vill så
+            gärna sticka fler kuddar, men Bruden behöver bara sockar just nu.
+            Och vi behöver heller inte fler gjutjärnsstekpannor, eller tallrikar
+            med Bodens fästning på... ;) )
+          </i>
         </p>
         <p>
           <b>Resa & Boende:</b> Reser gör du enklast med bil eller tåg. Vid
