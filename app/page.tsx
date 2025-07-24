@@ -5,17 +5,30 @@ import React from "react";
 import Resa from "./resa";
 import Anmalan from "./anmalan";
 import OmOss from "./om-oss";
+import Quiz from "./quiz";
+import BordsPlacering from "./bordsplacering";
+
+function getPage() {
+  const params = new URLSearchParams(window.location.hash);
+  return params.get("#page") || "";
+}
 
 export default function Home() {
-  const [page, setPage] = React.useState("");
+  const [page, setPage] = React.useState(getPage());
   React.useEffect(() => {
-    setPage(window.localStorage.getItem("page") ?? "");
+    const listener = () => {
+      setPage(getPage());
+    };
+    addEventListener("hashchange", listener);
+    return () => {
+      removeEventListener("hashchange", listener);
+    };
   }, []);
+
   const gotoPage = React.useCallback(
     (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, page: string) => {
       e.preventDefault();
-      setPage(page);
-      window.localStorage.setItem("page", page);
+      window.location.hash = `page=${page}`;
     },
     []
   );
@@ -47,7 +60,11 @@ export default function Home() {
               <a className="m-2" href="#" onClick={(e) => gotoPage(e, "resa")}>
                 Resa & Boende
               </a>
-              <a className="m-2" href="#" onClick={(e) => gotoPage(e, "omoss")}>
+              <a
+                className="m-2"
+                href="#"
+                onClick={(e) => gotoPage(e, "om-oss")}
+              >
                 Om oss
               </a>
               <a
@@ -63,8 +80,12 @@ export default function Home() {
               <Resa />
             ) : page === "anmalan" ? (
               <Anmalan />
-            ) : page === "omoss" ? (
+            ) : page === "om-oss" ? (
               <OmOss />
+            ) : page === "bordsplacering" ? (
+              <BordsPlacering />
+            ) : page === "quiz" ? (
+              <Quiz />
             ) : (
               <OmBrollopet gotoPage={gotoPage} />
             )}
