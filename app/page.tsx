@@ -47,7 +47,11 @@ export default function Home() {
             </div>
             <div className="text-center m-1">
               <p>16 Augusti 2025</p>
-              <p>Gammelsträng, Hälsingland</p>
+              <p>
+                <a href="https://maps.app.goo.gl/kNrEBSMceDG13tju6">
+                  Gammelsträng, Hälsingland
+                </a>
+              </p>
             </div>
             <div className="flex flex-row justify-center max-w-[30em] mx-auto navigation">
               <a
@@ -67,13 +71,13 @@ export default function Home() {
               >
                 Om oss
               </a>
-              <a
+              {/* <a
                 className="m-2"
                 href="#"
                 onClick={(e) => gotoPage(e, "anmalan")}
               >
                 Anmälan
-              </a>
+              </a> */}
             </div>
 
             {page === "resa" ? (

@@ -92,3 +92,7 @@ a {
   color: #000000;
   text-shadow: 0 0 2px #6a665c;
 }
+
+ul {
+  margin-left: 1em;
+}
