@@ -8,14 +8,17 @@ import OmOss from "./om-oss";
 import Quiz from "./quiz";
 import BordsPlacering from "./bordsplacering";
 
-function getPage() {
-  const params = new URLSearchParams(window.location.hash);
-  return params.get("#page") || "";
-}
-
 export default function Home() {
-  const [page, setPage] = React.useState(getPage());
+  const [page, setPage] = React.useState("");
+
+  // Init:
   React.useEffect(() => {
+    const getPage = () => {
+      const params = new URLSearchParams(window.location.hash);
+      return params.get("#page") || "";
+    };
+    setPage(getPage());
+
     const listener = () => {
       setPage(getPage());
     };
