@@ -35,6 +35,9 @@ export default function OmBrollopet(props: {
               i! Gärna folkdräkt om du har!
             </li>
             <li>
+              <b>Regnkläder</b> (vid risk för regn). Vi är utomhus stora delar av festen! 
+            </li>
+            <li>
               <b>Träningskläder!</b> <i>(frivilligt)</i> Om du vill vara med på
               kvällens lite mer aktiva upptåg, så packa med löpskor och
               träningskläder! (ta även med <b>pannlampa</b>!)
